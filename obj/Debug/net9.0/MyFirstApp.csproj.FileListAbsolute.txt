@@ -12,3 +12,4 @@
 /Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.pdb
 /Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.genruntimeconfig.cache
 /Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/ref/MyFirstApp.dll
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.sourcelink.json

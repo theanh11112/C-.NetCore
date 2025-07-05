@@ -1,56 +1,83 @@
-﻿using System.Security.Principal;
+﻿using System.Runtime.CompilerServices;
+using System.Security.Principal;
 
 namespace MyApp
 {
-    public delegate void ShowLog(string message);
+    public delegate void Sukiennhapso(int number);
 
-    class Program
+
+    class SukiennhapsoEventArgs(int number) : EventArgs
     {
-        static void Info(string message)
+        public int Number { get; } = number;
+    }
+    public class UserInput
+    {
+        // public Sukiennhapso? Sukiennhapso { set; get; }
+        public event EventHandler? Sukiennhapso;
+
+        public void Input()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine($"Info: {message}");
-            Console.ResetColor();
-        }
-
-        static void Warning(string message)
-        {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine($"Info: {message}");
-            Console.ResetColor();
-        }
-        static int Sum(int a, int b, ShowLog? log) => a + b;
-        static void Main(string[] args)
-        {
-            // ShowLog log = Info;
-            // log += Warning;
-
-            // log?.Invoke("Application started");
-            // Func<int, int, ShowLog, int> tinhtong;
-            // tinhtong = Sum;
-            // Console.WriteLine(tinhtong(10, 20, null));
-            // Action<string> log;
-            // log = Info;
-            // log?.Invoke("an xinh gai");
-            // Sum(10, 20, null);
-
-            Action<string> thongbao;
-            Func<int, int, int> tinhtong;
-            tinhtong = (a, b) => a + b;
-            Console.WriteLine(tinhtong(10, 20));
-            thongbao = (a) => Console.WriteLine("xin chao " + a);
-            thongbao?.Invoke("an xinh gai ");
-
-            int[] a = { 1, 2, 3, 4, 5, 6 };
-            var k1 = a.Where((x) =>
+            do
             {
-                return x % 2 == 0;
+                Console.WriteLine("Enter a number:");
+                string? s = Console.ReadLine();
+                if (string.IsNullOrEmpty(s))
+                {
+                    Console.WriteLine("Input was null or empty.");
+                    return;
+                }
+                int number = Int32.Parse(s);
+                Sukiennhapso?.Invoke(this, new SukiennhapsoEventArgs(number));
+            } while (true);
+        }
+    }
+
+    class Tinhcan
+    {
+        public void Sub(UserInput userInput)
+        {
+            userInput.Sukiennhapso += Can;
+        }
+        public void Can(object? sender, EventArgs e)
+        {
+            SukiennhapsoEventArgs args = (SukiennhapsoEventArgs)e;
+            int number = args.Number;
+            Console.WriteLine($"Can bac 2 cua so : {number} la {Math.Sqrt(number)}  ");
+
+        }
+
+        class TinhBinhPhuong
+        {
+            public void Sub(UserInput userInput)
+            {
+                userInput.Sukiennhapso += BinhPhuong;
             }
-            );
-            Console.WriteLine("Cac so chan trong mang la: ");
-            foreach (var item in k1)
+            public void BinhPhuong(object? sender, EventArgs e)
             {
-                Console.WriteLine(item);
+                SukiennhapsoEventArgs args = (SukiennhapsoEventArgs)e;
+                int number = args.Number;
+                Console.WriteLine($"Binh phuong cua so : {number} la {number * number}  ");
+                Console.WriteLine($"Sender: {sender?.GetType().Name}, EventArgs: {e.GetType().Name}    ");
+            }
+        }
+
+        class Program
+        {
+            static void Main(string[] args)
+            {
+                UserInput userInput = new();
+                userInput.Sukiennhapso += (sender, e) =>
+                {
+                    Console.WriteLine("an xinh gai ");
+                };
+
+                Tinhcan tinhcan = new();
+                tinhcan.Sub(userInput);
+
+                TinhBinhPhuong tinhbinhphuong = new();
+                tinhbinhphuong.Sub(userInput);
+
+                userInput.Input();
             }
         }
     }
