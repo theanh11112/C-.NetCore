@@ -1,0 +1,14 @@
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/MyFirstApp
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/MyFirstApp.deps.json
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/MyFirstApp.runtimeconfig.json
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/MyFirstApp.dll
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/MyFirstApp.pdb
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.AssemblyInfoInputs.cache
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.AssemblyInfo.cs
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.csproj.CoreCompileInputs.cache
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.dll
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/refint/MyFirstApp.dll
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.pdb
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.genruntimeconfig.cache
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/ref/MyFirstApp.dll
