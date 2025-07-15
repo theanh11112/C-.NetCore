@@ -13,3 +13,7 @@
 /Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.genruntimeconfig.cache
 /Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/ref/MyFirstApp.dll
 /Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.sourcelink.json
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.csproj.AssemblyReference.cache
+/Users/macbookpro/Documents/C#.Net/MyFirstApp/obj/Debug/net9.0/MyFirstApp.csproj.Up2Date

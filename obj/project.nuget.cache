@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "NSzZUqZGKpI=",
+  "dgSpecHash": "tWadAJF/w4Y=",
   "success": true,
   "projectFilePath": "/Users/macbookpro/Documents/C#.Net/MyFirstApp/MyFirstApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/macbookpro/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.7/microsoft.extensions.dependencyinjection.9.0.7.nupkg.sha512",
+    "/Users/macbookpro/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.7/microsoft.extensions.dependencyinjection.abstractions.9.0.7.nupkg.sha512"
+  ],
   "logs": []
 }
